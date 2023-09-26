@@ -1,5 +1,10 @@
+// For Inner Pages
 .inner-page {
     height: auto !important;
+
+    nav {
+        border-bottom: 2px solid #292929;
+    }
 
     .hero-img {
         filter: brightness(60%)
@@ -11,6 +16,7 @@
     }
 }
 
+// Top Information above Navbar
 .top-information {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -39,6 +45,8 @@
     }
 }
 
+
+// Navbar and Hero Section
 .nav-hero {
     width: 100%;
     height: auto;
@@ -51,8 +59,14 @@
     &::after {
         position: absolute;
         content: "";
+        // Black BG
         background: rgb(0, 0, 0);
         background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.8240546218487395) 33%, rgba(0, 0, 0, 0.7484243697478992) 65%, rgba(0, 0, 0, 0.7120098039215687) 84%);
+
+        // Green BG
+        // background: rgb(0, 0, 0);
+        // background: linear-gradient(180deg, rgb(23, 51, 1) 0%,  rgba(17, 41, 1, 0.82) 33%, rgba(12, 27, 1, 0.74) 65%, rgba(10, 22, 0, 0.71) 84%);
+
         width: 100%;
         height: 100%;
         top: 0;
@@ -65,15 +79,15 @@
         width: 100%;
         margin-top: 4rem;
 
-        // @media (max-width: 1200px) {
-        //     margin: 7rem 0 10rem;
-        // }
+        @media (max-width: 1200px) {
+            margin-top: 1rem;
+        }
 
         .hero-content {
             padding: 3rem 0rem 10rem;
 
             @media (max-width: 1200px) {
-                padding: 3rem 0rem 9rem;
+                padding: 0rem 0rem 9rem;
             }
         }
 
@@ -111,6 +125,7 @@
             text-align: center;
             margin-top: 2rem;
             margin-bottom: 2rem;
+            text-transform: capitalize;
 
             @media (max-width: 576px) {
                 margin-top: 0.5rem;
@@ -129,7 +144,8 @@
     }
 }
 
-// Social Media Ratings
+
+// Social Media Ratings which is right below hero section
 .ratings-div {
     margin-top: -8rem;
 
@@ -141,7 +157,6 @@
         box-shadow: 0 3px 20px rgba(0, 0, 0, .1);
         border-radius: 8px;
         width: 65%;
-        // margin-bottom: 3rem;
 
         @media (max-width:992px) {
             grid-template-columns: repeat(2, 1fr);
@@ -162,12 +177,6 @@
             display: flex;
             align-items: center;
             flex-direction: column;
-            // background: rgba(255, 255, 255, 0.59);
-            // border-radius: 16px;
-            // box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-            // backdrop-filter: blur(5px);
-            // -webkit-backdrop-filter: blur(5px);
-            // border: 1px solid rgba(255, 255, 255, 0.3);
             transition: all 0.5s;
 
             &:hover {
@@ -202,145 +211,12 @@
             }
         }
     }
-}
 
-// Coupons
-.coupons {
-    .coupons-flex {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 5rem;
-        padding: 0 10rem;
 
-        @media (max-width: 1200px) {
-            grid-template-columns: repeat(1, 1fr);
-        }
-
-        @media (max-width: 1200px) {
-            padding: 0 2rem;
-        }
-
-        @media (max-width: 1200px) {
-            padding: 0rem;
-            gap: 2rem;
-        }
-
-        .inside {
-            border: 2px dashed $info;
-        }
-
-        .column {
-            background-color: $dark;
-            padding: 1rem 1.5rem;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            border-radius: 12px;
-
-            .img-div {
-                width: 100%;
-                display: flex;
-                justify-content: center;
-                margin-bottom: 1rem;
-
-                img {
-                    width: 70%;
-                    margin: 0 auto;
-                }
-            }
-
-            p,
-            a {
-                color: $white;
-            }
-        }
-    }
-}
-
-.tune-up {
-    ul {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        column-gap: 1rem;
-        row-gap: 0.5rem;
-        list-style-type: none;
-
-        @media (max-width: 1200px) {
-            grid-template-columns: repeat(2, 1fr);
-        }
-
-        @media (max-width: 768px) {
-            grid-template-columns: repeat(1, 1fr);
-            list-style-type: circle;
-        }
-
-        li {
-            text-align: center;
-            font-size: 17px;
-            font-weight: 500;
-
-            @media (max-width: 768px) {
-                text-align: start;
-            }
-        }
-    }
-}
-
-// Testimonials
-
-// Testimonials
-.testimonials {
-    background-color: rgb(0, 0, 0, 0.8);
-    padding: 3rem 0;
-    position: relative;
-
-    .bg-img {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        object-fit: cover;
-        z-index: -1;
-    }
-
-    .testimonial-slider {
-        .column {
-            margin-top: 2rem;
-            margin-bottom: 2rem;
-            padding: 2rem 1.6rem;
-            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-            border-radius: 12px;
-            background-color: $white;
-            min-height: 320px;
-
-            .quote {
-                width: 4rem;
-            }
-
-            .data {
-                margin: 1.5rem 0;
-                color: #1b1b1b;
-            }
-
-            .user-info {
-                display: flex;
-                align-items: center;
-
-                .user-details {
-                    padding-left: 1rem;
-
-                    .name {
-                        font-weight: 500;
-                        font-size: 20px;
-                        color: $secondary;
-                    }
-
-                    .address {
-                        font-size: 15px;
-                    }
-                }
-            }
+    @media (min-width: 576px) and (max-width: 992px) {
+        .ratings-grid>*:nth-child(3) {
+            grid-column: span 2;
+            /* Makes it take full width in second row */
         }
     }
 }
@@ -350,6 +226,7 @@
 .about-us {
     padding-bottom: 3rem;
 
+    // About Us Section Reverse
     .opposite {
         flex-direction: row-reverse;
 
@@ -362,6 +239,7 @@
         }
     }
 
+    // Main About Us Section
     .about-us-flex {
         display: flex;
         justify-content: space-between;
@@ -413,6 +291,20 @@
 // Services
 .services {
     color: $white;
+    position: relative;
+    background-color: $dark;
+    z-index: 2;
+
+    // &::after{
+    //     position: absolute;
+    //     width: 100%;
+    //     height: 100%;
+    //     background-color: rgb(88, 195, 4, 0.05);
+    //     content: "";
+    //     top: 0;
+    //     left: 0;
+    //     z-index: -1;
+    // }
 
     .services-description {
         width: 25%;
@@ -422,6 +314,7 @@
         }
     }
 
+    // Services Slider
     .services-row {
         width: 73%;
 
@@ -484,7 +377,6 @@
                     display: none;
                     text-align: center;
                     color: $white;
-                    background-color: $secondary;
                     padding: 8px 16px;
                     width: fit-content;
                     margin: 0 auto;
@@ -508,60 +400,128 @@
     }
 }
 
-// Service Areas
-.service-areas {
-    padding: 3rem 0;
 
-    // &::after {
-    //     position: absolute;
-    //     content: "";
-    //     background-color: rgba(41, 37, 2, 0.5);
-    //     width: 100%;
-    //     height: 100%;
-    //     top: 0;
-    //     left: 0;
-    //     z-index: -1;
-    // }
+// Call to Action
+.cta {
+    position: relative;
+    padding: 5rem 0;
 
-    .bg-img {
+    // CTA BG Effect
+
+    &::after {
         position: absolute;
+        content: "";
+        background-color: rgba(26, 82, 0, 0.5);
         width: 100%;
         height: 100%;
         top: 0;
         left: 0;
-        z-index: -2;
-        object-fit: cover;
-        filter: brightness(30%);
+        z-index: -1;
     }
 
-    .cities {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        justify-content: center;
-        column-gap: 1rem;
-        margin-top: 2rem;
-        list-style-type: circle;
+    // Background Image
+    .bg-img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        filter: brightness(30%);
+        object-fit: cover;
+        z-index: -3;
+    }
 
-        @media (max-width: 768px) {
-            grid-template-columns: repeat(2, 1fr);
-        }
+    // CTA Text
+    h4 {
+        font-size: 28px;
+        font-weight: 600;
+        position: relative;
+        color: $white;
+        z-index: 2 !important;
+    }
+}
 
-        li {
-            padding-bottom: 0.5rem;
-            font-weight: 500;
-            width: fit-content;
-            margin: 0 auto;
-            color: $white;
+
+// Testimonials Section
+.testimonials {
+    padding: 3rem 0;
+    position: relative;
+
+    &::after {
+        position: absolute;
+        content: "";
+        background-color: rgba(26, 82, 0, 0.5);
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+
+    // Backround Image
+    .bg-img {
+        position: absolute;
+        filter: brightness(35%);
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+        z-index: -1;
+    }
+
+    // Testimonials Slider
+    .testimonial-slider {
+
+        // Each Testimonial Column of Slider
+        .column {
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+            padding: 2rem 1.6rem;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            border-radius: 12px;
+            background-color: $white;
+            min-height: 320px;
+
+            .quote {
+                width: 4rem;
+                filter: grayscale(100%);
+            }
+
+            .data {
+                margin: 1.5rem 0;
+                color: #1b1b1b;
+            }
+
+            .user-info {
+                display: flex;
+                align-items: center;
+
+                .user-details {
+                    padding-left: 1rem;
+
+                    .name {
+                        font-weight: 500;
+                        font-size: 20px;
+                        color: $primary;
+                    }
+
+                    .address {
+                        font-size: 15px;
+                    }
+                }
+            }
         }
     }
 }
 
-// Services Summary
 
+// Extra Services
 .services-summary {
     .process {
         display: flex;
         align-items: center;
+        justify-content: center;
         margin: 0 auto;
         margin-bottom: 3rem;
         width: 50%;
@@ -576,7 +536,7 @@
         }
 
         .number {
-            border: 4px solid $secondary;
+            border: 4px solid $primary;
             border-radius: 50%;
             // width: 5rem !important;
             // height: 5rem;
@@ -618,90 +578,88 @@
     }
 }
 
-// Call to Action
-.cta {
-    position: relative;
-    padding: 5rem 0;
+
+// Service Areas
+.service-areas {
+    padding: 3rem 0;
 
     &::after {
-        content: "";
-        background-color: rgb(0, 0, 0, 0.8);
         position: absolute;
+        content: "";
+        background-color: rgba(26, 82, 0, 0.5);
         width: 100%;
         height: 100%;
         top: 0;
         left: 0;
-        z-index: -2;
+        z-index: -1;
     }
 
     .bg-img {
         position: absolute;
         width: 100%;
         height: 100%;
-        left: 0;
         top: 0;
+        left: 0;
+        z-index: -2;
         object-fit: cover;
-        z-index: -3;
+        filter: brightness(30%);
     }
 
-    h4 {
-        font-size: 28px;
-        font-weight: 600;
-        position: relative;
-        color: $white;
-        z-index: 2 !important;
-    }
-}
+    .cities {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+        column-gap: 1rem;
+        margin-top: 2rem;
+        list-style-type: circle;
 
-// Appointment
-.appointment {
-    form {
-        background-color: $white;
-        padding: 2rem 1.5rem;
-        border-radius: 12px;
-        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-        margin: 2rem 0;
-
-        .flex {
-            display: grid;
+        @media (max-width: 768px) {
             grid-template-columns: repeat(2, 1fr);
-            gap: 1.5rem;
+        }
 
-            @media (max-width: 768px) {
-                grid-template-columns: repeat(1, 1fr);
+        li {
+            padding-bottom: 0.5rem;
+            font-weight: 500;
+            width: fit-content;
+            margin: 0 auto;
+            color: $white;
+        }
+    }
+}
+
+
+// Gallery
+.gallery {
+    .gallery-photos {
+        column-count: 3;
+        --webkit-column-count: 3;
+        --moz-column-count: 3;
+        gap: 1rem;
+        padding: 2rem 0rem;
+
+        @media (max-width: 576px) {
+            column-count: 1;
+        }
+
+        .image {
+            position: relative;
+            overflow: hidden;
+
+            img {
+                height: auto;
+                max-height: 25rem;
+                object-fit: cover;
+                width: 100%;
+                margin-bottom: 1rem;
+
+                &:hover {
+                    transform: scale(0.97);
+                }
             }
         }
     }
 }
 
-// Before-After
-.flex {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 3rem;
-
-    @media (max-width: 576px) {
-        grid-template-columns: repeat(1, 1fr);
-    }
-
-    .img-div {
-        width: 100%;
-
-        img {
-            width: 100%;
-            height: 35rem;
-            object-fit: cover;
-
-            @media (max-width: 768px) {
-                height: 20rem;
-            }
-
-            @media (max-width: 576px) {
-                height: 25rem;
-            }
-        }
-    }
-}
 
 // Footer
 footer {
@@ -866,21 +824,15 @@ footer {
     }
 }
 
-// Service Areas
-.service-cities {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
-    list-style-type: none;
+
+.remove-after {
+    color: $dark !important;
+
     li {
-        font-weight: 500;
-        font-size: 18px;
-        margin: 0 auto;
-        &::before {
-            font-family: "FontAwesome";
-            content: "\f3c5";
-            padding-right: 0.5rem;
-            color: $secondary;
-        }
+        color: $dark !important;
+    }
+
+    &::after {
+        display: none;
     }
 }

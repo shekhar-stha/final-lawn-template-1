@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 /* Color Set */
-$primary: #d5ae31;
-$secondary: rgb(207, 149, 49);
+$primary: #58c304;
+$secondary: #f09133;
 $warning: #a57715;
 $success: #ece188;
 $danger: #ff4d00;
@@ -10,6 +10,7 @@ $black: #302c2c;
 $white: #fcfef7;
 $creamWhite: #f7f2ed;
 $info: #808080;
+$body: #f8f8f8;
 
 $container-max-widths: (
     sm: 540px,
@@ -110,9 +111,10 @@ p {
 .btn {
     padding-top: 12px;
     padding-bottom: 12px;
+    border-radius: 4px !important;
 }
 
-
+// Primary Button
 .btn-primary {
     color: $white;
     font-weight: 500;
@@ -125,6 +127,7 @@ p {
     }
 }
 
+// Secondary Button
 .btn-secondary {
     color: $white;
     font-weight: 500;
@@ -142,6 +145,7 @@ p {
     }
 }
 
+// Outline Secondary
 .btn-outline-secondary {
     border: none;
     border-radius: 5px;
@@ -181,30 +185,7 @@ p {
     }
 }
 
-// .btn-outline-light{
-//     &:hover{
-//         background-color: $white;
-//     }
-// }
-
-
-
-.btn-warning {
-    color: $white;
-}
-
-.btn-success {
-    background-color: $success;
-    border-color: $success;
-    color: #000;
-}
-
-.btn-outline-success {
-    color: $success;
-    border-color: $success;
-}
-
-// 
+// Everything
 * {
     box-sizing: border-box;
     margin: 0;
@@ -215,26 +196,30 @@ p {
     scroll-behavior: smooth;
 }
 
+// Avoiding Animations
 html,
 body {
     overflow-x: hidden !important;
     overflow-y: visible !important;
 }
 
-
+// Anchor Tags
 a {
     color: #000000;
 }
 
+// Body
 body {
-    background-color: #f8f8f8;
+    background-color: $body;
 }
 
+// Sections
 section {
     overflow: hidden !important;
     margin-bottom: 4.5rem;
 }
 
+// Header
 .header {
     font-size: 2rem;
     font-weight: 700;
@@ -246,6 +231,7 @@ section {
     }
 }
 
+// Sub-header
 .sub-header {
     font-size: 1.3rem;
     text-transform: capitalize;
@@ -269,6 +255,7 @@ section {
     }
 }
 
+// Sub-header-center
 .sub-header-center {
     font-size: 1.3rem;
     text-transform: capitalize;
@@ -293,12 +280,7 @@ section {
     }
 }
 
-.lora {
-    font-family: 'Lora', serif;
-}
-
-
-
+// Dropdown Design
 .dropdown-submenu {
     position: relative;
 }
