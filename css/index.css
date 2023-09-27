@@ -51,7 +51,7 @@
   --bs-light: var(--light);
   --bs-dark: var(--dark);
   /* Used for text */
-  --bs-primary-rgb: 88, 195, 4;  
+  --bs-primary-rgb: 88, 195, 4;
   --bs-secondary-rgb: 240, 145, 51;
   --bs-success-rgb: 165, 119, 21;
   --bs-info-rgb: 128, 128, 128;
@@ -216,18 +216,31 @@ body {
   -webkit-tap-highlight-color: rgba(48, 44, 44, 0);
 }
 
-section{
-  .bg-img{
-
-  }
+/* White Top Information */
+/* .top-information-div {
+  background-color: var(--white);
 }
 
+
+.top-information div a,
+.top-information div p {
+  color: var(--dark) !important;
+  font-weight: 500;
+}
+
+nav {
+  background-color: var(--primary);
+} */
+
+/* Completed */
 
 .top-information {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
 }
+
+
 
 @media (max-width: 1200px) {
   .top-information {
@@ -254,6 +267,92 @@ section{
 .top-information div p {
   color: var(--white);
   font-size: 20px;
+}
+
+
+/* Navbar */
+nav {
+  z-index: 2;
+  width: 100%;
+  height: fit-content;
+}
+
+@media (max-width: 1200px) {
+  nav {
+    padding: 16px 0;
+  }
+}
+
+nav .navbar-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-self: center;
+}
+
+@media (max-width: 1200px) {
+  nav .navbar-nav {
+    flex-direction: column;
+  }
+}
+
+nav .navbar-nav .nav-link {
+  color: var(--white);
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-right: 2rem;
+  border-bottom: 4px solid transparent;
+  transition: all 0.7s;
+}
+
+@media (max-width: 1400px) {
+  nav .navbar-nav .nav-link {
+    margin-right: 1rem;
+  }
+}
+
+nav .navbar-nav .nav-link:hover {
+  border-bottom: 4px solid var(--primary);
+}
+
+@media (max-width: 1400px) {
+  nav .navbar-nav .nav-link {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 1200px) {
+  nav .navbar-nav .nav-link {
+    color: var(--dark);
+    text-align: center;
+  }
+}
+
+.logo {
+  width: 21rem;
+  min-height: 10rem;
+  object-fit: contain;
+  filter: drop-shadow(0 0 1rem rgba(0, 0, 0, 0.5));
+}
+
+@media (max-width: 1400px) {
+  .logo {
+    width: 17rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .logo {
+    width: 95%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .logo-section {
+    width: 21rem;
+    max-width: calc(100% - 65px);
+  }
 }
 
 /* Overall Navbar and Hero Section */
@@ -877,13 +976,13 @@ section{
 
 /* Footer Section */
 footer {
-  background: rgb(0,0,0);
-  background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.7960434173669468) 33%, rgba(0,0,0,0.7344187675070029) 65%, rgba(0,0,0,0.6699929971988796) 84%);
-  
+  background: rgb(0, 0, 0);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.7960434173669468) 33%, rgba(0, 0, 0, 0.7344187675070029) 65%, rgba(0, 0, 0, 0.6699929971988796) 84%);
+
   position: relative;
 }
 
-footer .bg-img{
+footer .bg-img {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -16159,89 +16258,6 @@ section {
   border-left-color: #fff;
 }
 
-nav {
-  z-index: 2;
-  width: 100%;
-  height: fit-content;
-}
-
-@media (max-width: 1200px) {
-  nav {
-    padding: 16px 0;
-  }
-}
-
-nav .navbar-nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-self: center;
-}
-
-@media (max-width: 1200px) {
-  nav .navbar-nav {
-    flex-direction: column;
-  }
-}
-
-nav .navbar-nav .nav-link {
-  color: var(--white);
-  font-size: 16px;
-  font-weight: 600;
-  text-transform: uppercase;
-  margin-right: 2rem;
-  border-bottom: 4px solid transparent;
-  transition: all 0.7s;
-}
-
-@media (max-width: 1400px) {
-  nav .navbar-nav .nav-link {
-    margin-right: 1rem;
-  }
-}
-
-nav .navbar-nav .nav-link:hover {
-  border-bottom: 4px solid var(--primary);
-}
-
-@media (max-width: 1400px) {
-  nav .navbar-nav .nav-link {
-    font-size: 15px;
-  }
-}
-
-@media (max-width: 1200px) {
-  nav .navbar-nav .nav-link {
-    color: var(--dark);
-    text-align: center;
-  }
-}
-
-.logo {
-  width: 21rem;
-  min-height: 10rem;
-  object-fit: contain;
-  filter: drop-shadow(0 0 1rem rgba(0, 0, 0, 0.5));
-}
-
-@media (max-width: 1400px) {
-  .logo {
-    width: 17rem;
-  }
-}
-
-@media (max-width: 1200px) {
-  .logo {
-    width: 95%;
-  }
-}
-
-@media (max-width: 1200px) {
-  .logo-section {
-    width: 21rem;
-    max-width: calc(100% - 65px);
-  }
-}
 
 .primary-button {
   font-family: "Ropa Sans", sans-serif;
