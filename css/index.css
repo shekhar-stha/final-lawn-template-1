@@ -50,6 +50,7 @@
   --bs-danger: var(--danger);
   --bs-light: var(--light);
   --bs-dark: var(--dark);
+
   /* Used for text */
   --bs-primary-rgb: 88, 195, 4;
   --bs-secondary-rgb: 240, 145, 51;
@@ -60,6 +61,7 @@
   --bs-light-rgb: 251, 251, 251;
   --bs-dark-rgb: 33, 37, 41;
   /* Finish */
+  
   --bs-primary-text-emphasis: #234e02;
   --bs-secondary-text-emphasis: #603a14;
   --bs-success-text-emphasis: #5e5a36;
