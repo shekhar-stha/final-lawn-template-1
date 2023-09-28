@@ -15,10 +15,79 @@
   --white: rgb(252, 254, 247);
   --creamWhite: rgb(247, 242, 237);
   --body: rgb(248, 248, 248);
+
+  /* Headline */
+  --headline-font: 'montserrat', sans-serif;
+  --headline-font-weight: 700;
+
+  /* Primary Texts */
+  --primary-font: 'montserrat', sans-serif;
+  --primary-font-weight: 400;
+
+  /* Used for text */
+  --bs-primary-rgb: 88, 195, 4;
+  --bs-secondary-rgb: 240, 145, 51;
+  --bs-success-rgb: 165, 119, 21;
+  --bs-info-rgb: 128, 128, 128;
+  --bs-warning-rgb: 165, 119, 21;
+  --bs-danger-rgb: 255, 77, 0;
+  --bs-light-rgb: 251, 251, 251;
+  --bs-dark-rgb: 33, 37, 41;
+  /* Finish */
+
+  /* Navigation */
+  --navigation-link-background: none;
+  --navigation-link-color: var(--white);
+  --navigation-link-border-color: var(--primary);
+  --navigation-link-text-decoration: none;
+  --navigation-link-hover-color: var(--primary);
+
+  /* Light Section */
+  --light-section-background: var(--body);
+  --light-section-text: var(--dark);
+  --light-section-header: var(--dark);
+
+  /* Dark Section */
+  --dark-section-background: var(--dark);
+  --dark-section-text: var(--white);
+  --dark-section-header: var(--white);
+
+  /* Footer */
+  --footer-section-background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.8603816526610644) 33%, rgba(0, 0, 0, 0.8547794117647058) 65%, rgba(0, 0, 0, 0.8295693277310925) 84%);
+  --footer-headline-color: var(--secondary);
+  --footer-section-text-color: var(--white);
 }
+
+/* Light Section */
+.light-section {
+  background-color: var(--light-section-background);
+}
+
+.light-section p {
+  color: var(--light-section-text);
+}
+
+.light-section .header {
+  color: var(--light-section-header);
+}
+
+/* Dark Section */
+.dark-section {
+  background-color: var(--dark-section-background);
+}
+
+.dark-section p {
+  color: var(--dark-section-text) !important;
+}
+
+.dark-section .header {
+  color: var(--dark-section-header);
+}
+
 
 :root,
 [data-bs-theme=light] {
+
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
   --bs-purple: #6f42c1;
@@ -50,18 +119,6 @@
   --bs-danger: var(--danger);
   --bs-light: var(--light);
   --bs-dark: var(--dark);
-
-  /* Used for text */
-  --bs-primary-rgb: 88, 195, 4;
-  --bs-secondary-rgb: 240, 145, 51;
-  --bs-success-rgb: 165, 119, 21;
-  --bs-info-rgb: 128, 128, 128;
-  --bs-warning-rgb: 165, 119, 21;
-  --bs-danger-rgb: 255, 77, 0;
-  --bs-light-rgb: 251, 251, 251;
-  --bs-dark-rgb: 33, 37, 41;
-  /* Finish */
-  
   --bs-primary-text-emphasis: #234e02;
   --bs-secondary-text-emphasis: #603a14;
   --bs-success-text-emphasis: #5e5a36;
@@ -632,7 +689,6 @@ nav .navbar-nav .nav-link:hover {
 .services {
   color: var(--white);
   position: relative;
-  background-color: var(--dark);
   z-index: 2;
 }
 
@@ -978,52 +1034,26 @@ nav .navbar-nav .nav-link:hover {
 
 /* Footer Section */
 footer {
-  background: rgb(0, 0, 0);
-  background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.7960434173669468) 33%, rgba(0, 0, 0, 0.7344187675070029) 65%, rgba(0, 0, 0, 0.6699929971988796) 84%);
-
-  position: relative;
-}
-
-footer .bg-img {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  top: 0;
-  left: 0;
-  object-fit: cover;
-  filter: brightness(70%);
-}
-
-footer .footer-bg {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  object-fit: cover;
-  filter: brightness(40%);
+  background: var(--footer-section-background)
 }
 
 footer .footer-nav {
   color: var(--white);
 }
 
+.footer-headline{
+  color: var(--footer-headline-color);
+  font-size: 20px;
+}
+
 footer .footer-nav a,
 footer .footer-nav p,
 footer .footer-nav span {
-  color: var(--white);
-}
-
-footer .footer-nav a {
-  text-shadow: var(--black) 0.1em 0.1em 0.2em;
+  color: var(--footer-section-text-color);
 }
 
 footer .footer-nav p {
   margin-bottom: 1rem;
-}
-
-footer .footer-nav svg {
-  color: var(--primary);
 }
 
 /* Single Testimonials */
@@ -16016,6 +16046,7 @@ fieldset:disabled .btn {
 
 p {
   margin: 0px;
+  font-weight: var(---primary-font-weight);
 }
 
 .btn {
@@ -16088,7 +16119,7 @@ p {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--primary-font);
   text-decoration: none !important;
   transition: all 0.3s ease-in;
   scroll-behavior: smooth;
@@ -16105,7 +16136,7 @@ a {
 }
 
 body {
-  background-color: #f8f8f8;
+  background-color: var(--body);
 }
 
 section {
@@ -16115,9 +16146,10 @@ section {
 
 .header {
   font-size: 2rem;
-  font-weight: 700;
+  font-weight: var(--headline-font-weight);
   text-transform: capitalize;
   margin-bottom: 2rem;
+  font-family: var(--headline-font);
 }
 
 @media (max-width: 576px) {
