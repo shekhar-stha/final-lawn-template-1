@@ -9,6 +9,7 @@
 
     <meta name="description" content="">
     <meta name="keywords" content="">
+    <meta name = "format-detection" content = "telephone=no">
 
     <!-- CSS -->
     <link rel="stylesheet" href="/css/index.css">
@@ -26,8 +27,8 @@
 <body>
     <!-- Navabr and Hero Section -->
     <section class="nav-hero inner-page position-relative" style="overflow: visible !important; overflow-x: hidden;">
-         <!-- Upper Navbar -->
-         <div class="top-information-div">
+        <!-- Upper Navbar -->
+        <div class="top-information-div">
             <div class="container">
                 <div class="top-information" data-aos="fade-down">
                     <div class="d-md-block d-none">
@@ -53,7 +54,8 @@
             <div class="container">
                 <!-- Logo Section (visible on extra large screens) -->
                 <div class="logo-section d-xl-none d-inline">
-                    <a title="Logo Navigation" href="/index.html"><img class="logo" src="/img/logo.png" alt="Logo Image"></a>
+                    <a title="Logo Navigation" href="/index.html"><img class="logo" src="/img/logo.png"
+                            alt="Logo Image"></a>
                 </div>
                 <!-- Navbar Toggler for mobile -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
@@ -67,7 +69,8 @@
                     <div class="offcanvas-header bg-dark">
                         <!-- Logo Section (visible on extra large screens, within offcanvas) -->
                         <div class="logo-section mb-0 d-xl-none d-inline">
-                            <a title="Homepage Navigation" href="/index.html"><img class="logo" src="/img/logo.png" alt="Canvas Logo"></a>
+                            <a title="Homepage Navigation" href="/index.html"><img class="logo" src="/img/logo.png"
+                                    alt="Canvas Logo"></a>
                         </div>
 
                         <!-- Close Button for offcanvas -->
@@ -147,7 +150,7 @@
         <div class="container">
             <div class="flex">
                 <!-- Company Info -->
-                <div class="info-section" data-aos="fade-right">
+                <div class="info-section dark-section" data-aos="fade-right">
                     <h4 class="text-center">Company Name</h4>
                     <ul>
                         <!-- Location -->
@@ -183,68 +186,111 @@
         </div>
     </section>
 
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery pt-3 light-section" data-aos="fade-up">
+        <div class="container">
+            <p class="sub-header">Our Works</p>
+            <h3 class="header">Visual Success Stories</h3>
+            <div class="gallery-photos">
 
-
- <!-- Footer -->
- <footer class="position-relative pt-3">
-    <div class="container mt-5">
-        <div class="row fw-500 fs-16">
-
-            <!-- Img Side Column 1 -->
-            <div class="col-lg pe-lg-5 me-lg-5 col-12 mb-lg-0 mb-5 text-lg-left">
-                <a title="Homepage Navigation" href="/index.html">
-                    <img src="/img/logo.png" alt="logo footer" style="object-fit: contain;" width="300"
-                        height="100%" class="d-inline-block mb-3" />
-                </a>
-            </div>
-
-           
-            <!-- Column 2 -->
-            <div class="col-lg col-md-4 col-12 mb-lg-0 mb-4 footer-col text-left">
-                <!-- Footer Title -->
-                              <p class="mb-3 fw-600 footer-headline"> Quick Links</p>
-                <!-- Homepage Sections -->
-                <div class="footer-nav">
-                    <p><a title="Our Services" href="/index.html#service">Our Services</a></p>
-                    <p><a title="About Us" href="/index.html#about">About Us</a></p>
-                    <p><a title="Service Areas" href="/service-areas.html">Service Areas</a></p>
+                <!-- First Photo -->
+                <div class="image">
+                    <a title="Gallery Photo 1" href="/img/gallery-1.jpg" data-lightbox="Gallery1">
+                        <img src="/img/gallery-1.jpg" alt="Gallery Photo 1">
+                    </a>
                 </div>
-            </div>
 
-            <!-- Column 3 -->
-            <div class="col-lg col-md-4 col-12 mb-lg-0 mb-4 footer-col text-left">
-                <!-- Footer Title -->
-    <p class="mb-3 fw-600 footer-headline">Contact us</p>
-                <div class="footer-nav">
-                    <!-- Phone Number -->
-                    <p class="d-flex mb-3">
-                        <i class="fs-20 fa-solid fa-phone me-3 text-primary"></i>
-                        <a title="Footer Phone Number" href="tel:+11111111111"> +1 (111) 111-1111 </a>
-                    </p>
+                <!-- Second Photo -->
+                <div class="image">
+                    <a title="Gallery Photo 2" href="/img/gallery-2.jpg" data-lightbox="gallery2">
+                        <img src="/img/gallery-2.jpg" alt="Gallery Photo 2">
+                    </a>
+                </div>
 
-                    <!-- Location -->
-                    <p class="d-flex">
-                        <i class="fa-solid fa-location-dot fs-20 me-3 text-primary"></i>
-                        <span> Location</span>
-                    </p>
+                <!-- Third Photo -->
+                <div class="image">
+                    <a title="Gallery Photo 3" href="/img/gallery-3.jpg" data-lightbox="gallery3">
+                        <img src="/img/gallery-3.jpg" alt="Gallery Photo 3">
+                    </a>
+                </div>
 
-                    <!-- Facebook -->
-                    <a title="Facebook Navigation" class=" d-flex align-items-center" target="_blank" href="#"><i
-                            class="fs-22 fa-brands fa-facebook me-3 text-primary"></i> Facebook</a>
+                <!-- Fourth Photo -->
+                <div class="image">
+                    <a title="Gallery Photo 4" href="/img/gallery-4.jpg" data-lightbox="gallery4">
+                        <img src="/img/gallery-4.jpg" alt="Gallery Photo 4">
+                    </a>
+                </div>
 
+                <!-- Fifth Photo -->
+                <div class="image">
+                    <a title="Gallery Photo 5" href="/img/gallery-5.jpg" data-lightbox="gallery5">
+                        <img src="/img/gallery-5.jpg" alt="Gallery Photo 5">
+                    </a>
                 </div>
             </div>
         </div>
-        <hr class="mt-4" />
+    </section>
 
-        <p class="pt-2 pb-3 fw-500 text-white text-center border-1 border-top border-white pt-5">&copy;
-            Company 2023. All rights reserved.</p>
-        <p class="pt-2 pb-3 fw-500 text-white text-center">The content available on this website is owned by us
-            and
-            our licensors. Copying any content, including images, without our consent is prohibited.</p>
-    </div>
-</footer>
 
+    <!-- Footer -->
+    <footer class="position-relative pt-3">
+        <div class="container mt-5">
+            <div class="row fw-500 fs-16">
+
+                <!-- Img Side Column 1 -->
+                <div class="col-lg pe-lg-5 me-lg-5 col-12 mb-lg-0 mb-5 text-lg-left">
+                    <a title="Homepage Navigation" href="/index.html">
+                        <img src="/img/logo.png" alt="logo footer" style="object-fit: contain;" width="300"
+                            height="100%" class="d-inline-block mb-3" />
+                    </a>
+                </div>
+
+
+                <!-- Column 2 -->
+                <div class="col-lg col-md-4 col-12 mb-lg-0 mb-4 footer-col text-left">
+                    <!-- Footer Title -->
+                    <p class="mb-3 fw-600 footer-headline"> Quick Links</p>
+                    <!-- Homepage Sections -->
+                    <div class="footer-nav">
+                        <p><a class="link" title="Our Services" href="/index.html#service">Our Services</a></p>
+                        <p><a class="link" title="About Us" href="/index.html#about">About Us</a></p>
+                        <p><a class="link" title="Service Areas" href="/service-areas.html">Service Areas</a></p>
+                    </div>
+                </div>
+
+                <!-- Column 3 -->
+                <div class="col-lg col-md-4 col-12 mb-lg-0 mb-4 footer-col text-left">
+                    <!-- Footer Title -->
+                    <p class="mb-3 fw-600 footer-headline">Contact us</p>
+                    <div class="footer-nav">
+                        <!-- Phone Number -->
+                        <p class="d-flex mb-3">
+                            <i class="fs-20 fa-solid fa-phone me-3 text-primary"></i>
+                            <a class="link" title="Footer Phone Number" href="tel:+11111111111"> +1 (111) 111-1111 </a>
+                        </p>
+
+                        <!-- Location -->
+                        <p class="d-flex">
+                            <i class="fa-solid fa-location-dot fs-20 me-3 text-primary"></i>
+                            <span> Location</span>
+                        </p>
+
+                        <!-- Facebook -->
+                        <a title="Facebook Navigation" class=" d-flex align-items-center link" target="_blank"
+                            href="#"><i class="fs-22 fa-brands fa-facebook me-3 text-primary"></i> Facebook</a>
+
+                    </div>
+                </div>
+            </div>
+            <hr class="mt-4" />
+
+            <p class="pt-2 pb-3 fw-500 text-white text-center border-1 border-top border-white pt-5">&copy;
+                Company 2023. All rights reserved.</p>
+            <p class="pt-2 pb-3 fw-500 text-white text-center">The content available on this website is owned by us
+                and
+                our licensors. Copying any content, including images, without our consent is prohibited.</p>
+        </div>
+    </footer>
 
     <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"
