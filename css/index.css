@@ -45,6 +45,7 @@
   --navigation-link-border-color: var(--primary);
   --navigation-link-text-decoration: none;
   --navigation-link-hover-color: var(--primary);
+  --upper-nav-icon-color: var(--primary);
 
   /* Hero */
   --hero-overlay: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0.8240546218) 33%, rgba(0, 0, 0, 0.7484243697) 65%, rgba(0, 0, 0, 0.7120098039) 84%);
@@ -92,6 +93,7 @@
   --footer-section-text-color: var(--white);
   --footer-section-ahref-color: var(--white);
   --footer-section-ahref-hover-color: var(--white);
+  --footer-section-icon-color: var(--primary);
 
   /* Primary Overlay Section */
   --primary-overlay-bg-color: rgba(26, 82, 0, 0.5);
@@ -524,6 +526,9 @@ nav {
   font-size: 20px;
 }
 
+.top-information i{
+  color: var(--upper-nav-icon-color);
+}
 
 /* Navbar */
 nav {
@@ -1310,8 +1315,10 @@ footer .footer-nav p {
   margin-bottom: 1rem;
 }
 
-
-
+footer i{
+  color: var(--footer-section-icon-color);
+}
+/* Homepage completed */
 .error-page img {
   width: 100%;
   height: 100%;
